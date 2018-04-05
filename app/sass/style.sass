@@ -1,0 +1,105 @@
+
+@import "bootstrap"
+
+@-webkit-@keyframes modal
+	from
+		opacity: 0
+		top: 30%
+
+	to
+		opacity: 1
+		top: 50%
+
+@keyframes modal
+	from
+		opacity: 0
+		top: 30%
+
+	to
+		opacity: 1
+		top: 50%
+
+@font-face
+	font-family: "SFUIDisplay-Thin-Regular"
+	src: url("../fonts/SFUIDisplay-Thin.ttf")
+	font-weight: normal
+	font-style: normal
+	
+@font-face
+	font-family: "SFUIDisplay-Thin-Bold"
+	src: url("../fonts/SFUIDisplay-Bold.ttf")
+	font-weight: normal
+	font-style: normal
+	
+@font-face
+	font-family: "SFUIDisplay-Thin-Heavy"
+	src: url("../fonts/SFUIDisplay-Heavy.ttf")
+	font-weight: normal
+	font-style: normal
+	
+$font-primary: "SFUIDisplay-Thin-Regular"
+$font-primary-bold: "SFUIDisplay-Thin-Bold"
+$font-primary-heavy: "SFUIDisplay-Thin-Heavy"
+
+$font-size-text: 16px
+
+$color-white: #ffffff
+$color-blue: #2e67f0
+$color-red: #fa2342
+$color-gray: #5f5f5f
+$color-footer-bg: #f0f3fb
+
+* 
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	
+body
+	font-family: $font-primary
+	line-height: 1.2 
+	
+h1
+	font-family: $font-primary
+	font-size: 56px
+	color: $color-white
+	
+h2
+	font-size: 50px
+	text-align: center
+	margin-bottom: 60px
+	
+h3
+	font-family: $font-primary-bold
+	font-size: 28px
+	
+button
+	background: none
+	border: none
+	font-family: $font-primary-bold
+	
+img
+	color: $color-white
+	
+a
+	text-decoration: none
+	
+	&:hover
+		text-decoration: none
+	
+menu
+	list-style: none
+	
+ul
+	list-style: none
+	
+input
+	height: 50px
+	font-size: 16px
+	font-weight: bold
+	color: #c4c4c4
+	padding: 0 15px
+	border: none
+	
+	&:focus
+		border: 1px solid #5f5f5f
+		color: #5f5f5f 
