@@ -1,85 +1,59 @@
 
 @import "bootstrap"
 
-@-webkit-@keyframes modal
-	from
-		opacity: 0
-		top: 30%
-
-	to
-		opacity: 1
-		top: 50%
-
-@keyframes modal
-	from
-		opacity: 0
-		top: 30%
-
-	to
-		opacity: 1
-		top: 50%
-
 @font-face
-	font-family: "SFUIDisplay-Thin-Regular"
-	src: url("../fonts/SFUIDisplay-Thin.ttf")
+	font-family: "titilliumweb"
+	src: url("../fonts/titillium/titilliumweb.ttf")
 	font-weight: normal
 	font-style: normal
 	
 @font-face
-	font-family: "SFUIDisplay-Thin-Bold"
-	src: url("../fonts/SFUIDisplay-Bold.ttf")
+	font-family: "Roboto"
+	src: url("../fonts/roboto/Roboto-Regular.ttf")
 	font-weight: normal
 	font-style: normal
 	
 @font-face
-	font-family: "SFUIDisplay-Thin-Heavy"
-	src: url("../fonts/SFUIDisplay-Heavy.ttf")
+	font-family: "Roboto-Bold"
+	src: url("../fonts/roboto/Roboto-Bold.ttf")
 	font-weight: normal
 	font-style: normal
 	
-$font-primary: "SFUIDisplay-Thin-Regular"
+$font-primary: "Roboto"
 $font-primary-bold: "SFUIDisplay-Thin-Bold"
 $font-primary-heavy: "SFUIDisplay-Thin-Heavy"
 
-$font-size-text: 16px
+$font-size-text: 18px
 
-$color-white: #ffffff
-$color-blue: #2e67f0
-$color-red: #fa2342
-$color-gray: #5f5f5f
-$color-footer-bg: #f0f3fb
+$color-1: #333333
+$color-2: #005cc3
+$color-body: #f5f5f5
 
 * 
 	box-sizing: border-box
 	margin: 0
 	padding: 0
+	color: $color-1 
 	
 body
 	font-family: $font-primary
-	line-height: 1.2 
+	font-size: $font-size-text
+	background-color: $color-body 
 	
 h1
-	font-family: $font-primary
 	font-size: 56px
-	color: $color-white
 	
 h2
 	font-size: 50px
-	text-align: center
-	margin-bottom: 60px
 	
 h3
-	font-family: $font-primary-bold
 	font-size: 28px
 	
 button
 	background: none
 	border: none
 	font-family: $font-primary-bold
-	
-img
-	color: $color-white
-	
+		
 a
 	text-decoration: none
 	
@@ -102,4 +76,73 @@ input
 	
 	&:focus
 		border: 1px solid #5f5f5f
-		color: #5f5f5f 
+		color: #5f5f5f
+		
+p
+	line-height: 1.4
+		
+.page-title
+	font-size: 23px
+	width: 390px
+	margin: 0 auto
+		
+.header
+	text-align: center
+	padding: 50px 0
+	background-color: white 
+	
+.navbar
+	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#444444))
+    background: -webkit-linear-gradient(top, #333333, #444444)
+    background: -o-linear-gradient(top, #333333, #444444)
+    background: linear-gradient(to bottom, #333333, #444444)
+	
+.menu
+
+	&:after
+		content: ''
+		display: table
+		clear: both
+		
+	&__item
+		float: left
+		height: 50px
+		padding: 14px 15px 0 
+		
+	&__link
+	 	color: white 
+	 	
+.section-title
+	position: relative
+	background: white
+	height: 45px
+	line-height: 45px
+	padding-left: 20px
+	margin-top: 15px
+	margin-bottom: 15px
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 4px
+		height: 45px
+		background: #333333 
+	
+	&__text
+		color: $color-2 
+		
+.content
+	background: #ffffff
+	
+.post
+
+ 	&__title
+ 		font-family: "Roboto-Bold"
+ 		font-size: 26px
+ 		line-height: 1.1
+ 		
+ 	&__text
+ 		font-size: 16px
+ 		
